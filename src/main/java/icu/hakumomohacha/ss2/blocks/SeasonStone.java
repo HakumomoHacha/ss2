@@ -1,10 +1,11 @@
 package icu.hakumomohacha.ss2.blocks;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.Material;
 
 public class SeasonStone extends Block {
     public SeasonStone() {
-        super(Properties.of(Material.STONE));
+        super(Properties.of(Material.STONE).sound(SoundType.STONE));
     }
 }

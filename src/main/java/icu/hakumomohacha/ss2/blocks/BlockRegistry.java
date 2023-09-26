@@ -1,7 +1,10 @@
 package icu.hakumomohacha.ss2.blocks;
 
 import icu.hakumomohacha.ss2.Utils;
+import icu.hakumomohacha.ss2.level.tree.CherryTreeGrower;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -16,4 +19,6 @@ public class BlockRegistry {
     public static final RegistryObject<Block> CHERRY_LEAVES = BLOCKS.register("cherry_leaves", CherryLeaves::new);
     public static final RegistryObject<Block> CHERRY_WOOD = BLOCKS.register("cherry_wood", CherryWood::new);
     public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", CherryLog::new);
+
+    public static final RegistryObject<Block> CHERRY_SAPLING = BLOCKS.register("cherry_sapling", CherrySapling::new);
 }

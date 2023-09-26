@@ -9,21 +9,21 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.lwjgl.system.CallbackI;
 
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Utils.mod_id);
 
-    public static final RegistryObject<Item> SEASON_DIRT = ITEMS.register("season_dirt", () -> new BlockItem(BlockRegistry.SEASON_DIRT.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SEASON_STONE = ITEMS.register("season_stone", () -> new BlockItem(BlockRegistry.SEASON_STONE.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SPRING_GRASS_BLOCK = ITEMS.register("spring_grass_block", () -> new BlockItem(BlockRegistry.SPRING_GRASS_BLOCK.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CHERRY_GRASS_BLOCK = ITEMS.register("cherry_grass_block", () -> new BlockItem(BlockRegistry.CHERRY_GRASS_BLOCK.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CHERRY_LEAVES = ITEMS.register("cherry_leaves", () -> new BlockItem(BlockRegistry.CHERRY_LEAVES.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CHERRY_WOOD = ITEMS.register("cherry_wood", () -> new BlockItem(BlockRegistry.CHERRY_WOOD.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CHERRY_LOG = ITEMS.register("cherry_log", () -> new BlockItem(BlockRegistry.CHERRY_LOG.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SEASON_DIRT = formBlock("season_dirt", BlockRegistry.SEASON_DIRT);
+    public static final RegistryObject<Item> SEASON_STONE = formBlock("season_stone", BlockRegistry.SEASON_STONE);
+    public static final RegistryObject<Item> SPRING_GRASS_BLOCK = formBlock("spring_grass_block", BlockRegistry.SPRING_GRASS_BLOCK);
+    public static final RegistryObject<Item> CHERRY_GRASS_BLOCK = formBlock("cherry_grass_block", BlockRegistry.CHERRY_GRASS_BLOCK);
+    public static final RegistryObject<Item> CHERRY_LEAVES = formBlock("cherry_leaves", BlockRegistry.CHERRY_LEAVES);
+    public static final RegistryObject<Item> CHERRY_WOOD = formBlock("cherry_wood", BlockRegistry.CHERRY_WOOD);
+    public static final RegistryObject<Item> CHERRY_LOG = formBlock("cherry_log",BlockRegistry.CHERRY_LOG);
+    public static RegistryObject<Item> CHERRY_SAPLING = formBlock("cherry_sapling",BlockRegistry.CHERRY_SAPLING);
 
     private static Item.Properties defaultItemProperties() {
-        return new Item.Properties().tab(SS2Group.SS2_GROUP);
+        return new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB);
     }
 
     private static RegistryObject<Item> formBlock(String name, RegistryObject<Block> block) {

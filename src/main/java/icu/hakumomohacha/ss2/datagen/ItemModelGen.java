@@ -38,7 +38,8 @@ public class ItemModelGen extends ItemModelProvider {
     @Override
     protected void registerModels() {
         Set<Item> items = getItems();
-
+        skipItems.add(ItemRegistry.SPRING_GRASS_BLOCK.get());
+        skipItems.add(ItemRegistry.CHERRY_GRASS_BLOCK.get());
         items.removeAll(skipItems);
         registerItemBlock(items.stream()
                 .filter(item -> item instanceof BlockItem)
@@ -63,6 +64,7 @@ public class ItemModelGen extends ItemModelProvider {
 
     //模型生成主逻辑，在注册后，会设置已注册的方块物品为跳过状态。防止覆盖生成。
     protected void registerItemBlock(@NotNull Set<BlockItem> blockItems) {
+
         blockItems.forEach(blockItem -> withExistingParent(name(blockItem),
                 modLoc("block/" + name(blockItem))));
         skipItems(blockItems);
