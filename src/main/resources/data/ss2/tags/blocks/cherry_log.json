@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {
-      "id": "ss2:block/cherry_log",
-      "required": false
-    }
-  ]
-}

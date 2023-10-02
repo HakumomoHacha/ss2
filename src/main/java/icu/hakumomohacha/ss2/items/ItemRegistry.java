@@ -20,7 +20,9 @@ public class ItemRegistry {
     public static final RegistryObject<Item> CHERRY_LEAVES = formBlock("cherry_leaves", BlockRegistry.CHERRY_LEAVES);
     public static final RegistryObject<Item> CHERRY_WOOD = formBlock("cherry_wood", BlockRegistry.CHERRY_WOOD);
     public static final RegistryObject<Item> CHERRY_LOG = formBlock("cherry_log",BlockRegistry.CHERRY_LOG);
-    public static RegistryObject<Item> CHERRY_SAPLING = formBlock("cherry_sapling",BlockRegistry.CHERRY_SAPLING);
+    public static final RegistryObject<Item> CHERRY_SAPLING = formBlock("cherry_sapling",BlockRegistry.CHERRY_SAPLING);
+    public static final RegistryObject<Item> CHERRY_HANA = formBlock("cherry_hana",BlockRegistry.CHERRY_HANA);
+    public static final RegistryObject<Item> MOON_HANA = formBlock("moon_hana",BlockRegistry.MOON_HANA);
 
     private static Item.Properties defaultItemProperties() {
         return new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB);

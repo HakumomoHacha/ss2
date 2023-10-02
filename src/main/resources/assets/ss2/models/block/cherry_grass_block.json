@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "ss2:block/cherry_grass_top",
+    "bottom": "ss2:block/season_dirt",
+    "side": "ss2:block/cherry_grass"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "openstate=0": {
+      "model": "ss2:block/moon_hana"
+    },
+    "openstate=1": {
+      "model": "ss2:block/moon_hana_open"
+    }
+  }
+}

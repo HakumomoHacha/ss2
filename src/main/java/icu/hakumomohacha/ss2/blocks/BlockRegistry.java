@@ -19,6 +19,8 @@ public class BlockRegistry {
     public static final RegistryObject<Block> CHERRY_LEAVES = BLOCKS.register("cherry_leaves", CherryLeaves::new);
     public static final RegistryObject<Block> CHERRY_WOOD = BLOCKS.register("cherry_wood", CherryWood::new);
     public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", CherryLog::new);
+    public static final RegistryObject<Block> CHERRY_HANA = BLOCKS.register("cherry_hana", CherryHana::new);
+    public static final RegistryObject<Block> MOON_HANA = BLOCKS.register("moon_hana", MoonHana::new);
 
     public static final RegistryObject<Block> CHERRY_SAPLING = BLOCKS.register("cherry_sapling", CherrySapling::new);
 }

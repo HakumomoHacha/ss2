@@ -1,6 +1,7 @@
 package icu.hakumomohacha.ss2;
 
 import com.mojang.logging.LogUtils;
+import icu.hakumomohacha.ss2.blockentities.EntityTypeRegistry;
 import icu.hakumomohacha.ss2.blocks.BlockRegistry;
 import icu.hakumomohacha.ss2.items.ItemRegistry;
 import net.minecraft.world.level.block.Block;
@@ -33,6 +34,7 @@ public class Ss2 {
         ItemRegistry.ITEMS.register(modbus);
         BlockRegistry.BLOCKS.register(modbus);
         MinecraftForge.EVENT_BUS.register(this);
+        EntityTypeRegistry.BLOCK_ENTITIES.register(modbus);
 
     }
 
