@@ -1,5 +1,6 @@
 package icu.hakumomohacha.ss2.datagen;
 
+import icu.hakumomohacha.ss2.blocks.BlockRegistry;
 import icu.hakumomohacha.ss2.items.ItemRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -40,6 +41,8 @@ public class ItemModelGen extends ItemModelProvider {
         Set<Item> items = getItems();
         skipItems.add(ItemRegistry.SPRING_GRASS_BLOCK.get());
         skipItems.add(ItemRegistry.CHERRY_GRASS_BLOCK.get());
+        skipItems.add(BlockRegistry.CHERRY_DOOR.get().asItem());
+        skipItems.add(BlockRegistry.SPRING_DOOR.get().asItem());
         items.removeAll(skipItems);
         registerItemBlock(items.stream()
                 .filter(item -> item instanceof BlockItem)

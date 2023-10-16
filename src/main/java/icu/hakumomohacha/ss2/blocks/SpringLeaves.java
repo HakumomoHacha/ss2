@@ -1,14 +1,11 @@
 package icu.hakumomohacha.ss2.blocks;
 
-import icu.hakumomohacha.ss2.items.ItemRegistry;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 
-public class CherryLeaves extends LeavesBlock {
-    public CherryLeaves() {
+public class SpringLeaves extends LeavesBlock {
+    public SpringLeaves() {
         super(Properties.of(Material.LEAVES).noOcclusion().sound(SoundType.GRASS).randomTicks().strength(0.2F));
         this.registerDefaultState(this.stateDefinition.any().setValue(DISTANCE, Integer.valueOf(7)).setValue(PERSISTENT, Boolean.valueOf(false)));
     }

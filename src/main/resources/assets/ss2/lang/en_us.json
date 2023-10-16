@@ -1,10 +1,13 @@
 {
-  "block.ss2.season_dirt": "季泥",
-  "block.ss2.season_stone":"季石",
-  "block.ss2.spring_grass_block":"春之草块",
-  "block.ss2.cherry_grass_block": "樱草块",
-  "block.ss2.cherry_leaves": "樱叶",
-  "block.ss2.cherry_wood": "樱木板",
-  "block.ss2.cherry_log": "樱木",
+  "block.ss2.season_dirt": "Season dirt",
+  "block.ss2.season_stone":"Season stone",
+  "block.ss2.spring_grass_block":"Spring grass block",
+  "block.ss2.cherry_grass_block": "Cherry grass block",
+  "block.ss2.cherry_leaves": "Cherry leaves",
+  "block.ss2.cherry_wood": "Cherry wood",
+  "block.ss2.cherry_log": "Cherry log",
+  "block.ss2.cherry_door": "Cherry door",
+  "block.ss2.cherry_sapling": "Cherry sapling",
+  "block.ss2.moon_hana": "Moon flower",
   "itemGroup.ss2_group": "四季秘境2"
 }

@@ -3,6 +3,8 @@ package icu.hakumomohacha.ss2.blocks;
 import icu.hakumomohacha.ss2.Utils;
 import icu.hakumomohacha.ss2.level.tree.CherryTreeGrower;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,8 +21,13 @@ public class BlockRegistry {
     public static final RegistryObject<Block> CHERRY_LEAVES = BLOCKS.register("cherry_leaves", CherryLeaves::new);
     public static final RegistryObject<Block> CHERRY_WOOD = BLOCKS.register("cherry_wood", CherryWood::new);
     public static final RegistryObject<Block> CHERRY_LOG = BLOCKS.register("cherry_log", CherryLog::new);
-    public static final RegistryObject<Block> CHERRY_HANA = BLOCKS.register("cherry_hana", CherryHana::new);
-    public static final RegistryObject<Block> MOON_HANA = BLOCKS.register("moon_hana", MoonHana::new);
+    public static final RegistryObject<FlowerBlock> CHERRY_HANA = BLOCKS.register("cherry_hana", CherryHana::new);
+    public static final RegistryObject<FlowerBlock> MOON_HANA = BLOCKS.register("moon_hana", MoonHana::new);
+    public static final RegistryObject<DoorBlock> CHERRY_DOOR = BLOCKS.register("cherry_door", CherryDoor::new);
+    public static final RegistryObject<Block> SPRING_LOG = BLOCKS.register("spring_log", SpringLog::new);
+    public static final RegistryObject<DoorBlock> SPRING_DOOR = BLOCKS.register("spring_door", SpringDoor::new);
+    public static final RegistryObject<Block> SPRING_WOOD = BLOCKS.register("spring_wood", SpringWood::new);
+    public static final RegistryObject<Block> SPRING_LEAVES = BLOCKS.register("spring_leaves", SpringLeaves::new);
 
     public static final RegistryObject<Block> CHERRY_SAPLING = BLOCKS.register("cherry_sapling", CherrySapling::new);
 }

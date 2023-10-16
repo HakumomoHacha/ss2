@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "bottom": "ss2:block/spring_door_bottom",
+    "top": "ss2:block/spring_door_top"
+  }
+}

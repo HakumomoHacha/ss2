@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ss2:cherry_log"
-  ]
+    "ss2:cherry_log",
+    "ss2:spring_log"
+    ]
 }

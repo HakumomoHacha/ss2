@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "ss2:block/spring_log",
+    "end": "ss2:block/spring_log_top"
+  }
+}

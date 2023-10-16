@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ss2:item/moon_hana"
+    "layer0": "ss2:item/cherry_door"
   }
 }

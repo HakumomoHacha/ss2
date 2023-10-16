@@ -21,8 +21,14 @@ public class ItemRegistry {
     public static final RegistryObject<Item> CHERRY_WOOD = formBlock("cherry_wood", BlockRegistry.CHERRY_WOOD);
     public static final RegistryObject<Item> CHERRY_LOG = formBlock("cherry_log",BlockRegistry.CHERRY_LOG);
     public static final RegistryObject<Item> CHERRY_SAPLING = formBlock("cherry_sapling",BlockRegistry.CHERRY_SAPLING);
-    public static final RegistryObject<Item> CHERRY_HANA = formBlock("cherry_hana",BlockRegistry.CHERRY_HANA);
-    public static final RegistryObject<Item> MOON_HANA = formBlock("moon_hana",BlockRegistry.MOON_HANA);
+    public static final RegistryObject<Item> CHERRY_DOOR = ITEMS.register("cherry_door",()->new BlockItem(BlockRegistry.CHERRY_DOOR.get(),new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB)));
+    public static final RegistryObject<Item> MOON_HANA = ITEMS.register("moon_hana",()->new BlockItem(BlockRegistry.MOON_HANA.get(),new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB)));
+    public static final RegistryObject<Item> CHERRY_HANA = ITEMS.register("cherry_hana",()->new BlockItem(BlockRegistry.CHERRY_HANA.get(),new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB)));
+    public static final RegistryObject<Item> SPRING_LOG = formBlock("spring_log",BlockRegistry.SPRING_LOG);
+    public static final RegistryObject<Item> SPRING_WOOD = formBlock("spring_wood",BlockRegistry.SPRING_WOOD);
+    public static final RegistryObject<Item> SPRING_LEAVES= formBlock("spring_leaves",BlockRegistry.SPRING_LEAVES);
+    public static final RegistryObject<Item> SPRING_DOOR = ITEMS.register("spring_door",()->new BlockItem(BlockRegistry.SPRING_DOOR.get(),new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB)));
+
 
     private static Item.Properties defaultItemProperties() {
         return new Item.Properties().tab(SS2Group.CREATIVE_MODE_TAB);

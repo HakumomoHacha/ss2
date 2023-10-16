@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ss2:block/spring_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ss2:block/spring_log"
+    },
+    "axis=z": {
+      "model": "ss2:block/spring_log_horizontal",
+      "x": 90
+    }
+  }
+}
